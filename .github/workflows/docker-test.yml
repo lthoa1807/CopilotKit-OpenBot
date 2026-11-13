@@ -1,6 +1,10 @@
 name: Docker Build Test
 
 on:
+  push:
+    branches:
+      - main
+      - test-docker-ghcr  # Thêm nhánh này vào đây
   workflow_dispatch:
 
 permissions:
